@@ -10,13 +10,13 @@ repo_url = "https://github.com/gmw99/data-free-metrics-dont-work"
 repo_name = "gmw99/data-free-metrics-dont-work"
 edit_uri = "edit/main/docs/"
 
- extra_css = ["stylesheets/extra.css"]
- extra_javascript = ["javascripts/mathjax.js", "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",]
+extra_css = ["stylesheets/extra.css"]
+extra_javascript = ["javascripts/mathjax.js", "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",]
 
 [project.theme]
 # variant = "classic"
 # custom_dir = "overrides"
- favicon = "assets/favicon.ico"
+favicon = "assets/favicon.ico"
 language = "en"
 features = [
   "navigation.hide",
