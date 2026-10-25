@@ -10,6 +10,7 @@ dependencies = [
     "torch>=2.14.1",
     "torchvision>=0.29.1",
     "tqdm>=4.70.1",
+    "weightwatcher>=0.7.7",
 ]
 
 [dependency-groups]
