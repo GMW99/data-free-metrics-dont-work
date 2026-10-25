@@ -18,8 +18,6 @@ hide:
 )](https://openreview.net/forum?id=PQie2dx3oX "OpenReview Link") 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GMW99/data-free-metrics-dont-work/blob/notebooks/ "Colab Link")
 
-https://colab.research.google.com/github/googlecolab/colabtools/
-
 <div class="abstract" markdown>
 === ":microscope: Technical Abstract"
 
