@@ -1,0 +1,31 @@
+.md-header__title.md-header__title--active .md-header__topic:first-child {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+.md-header__title.md-header__title--active .md-header__topic:last-child {
+  transform: none !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.abstract {
+  margin: 30px auto !important;
+  max-width: 800px;
+}
+
+
+/* Ensure the horizontal tab bar wraps tightly around the buttons and stays centered */
+.tabbed-labels {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Center and expand the abstract content underneath the tabs */
+.tabbed-content {
+  width: 100% !important;
+  text-align: left; /* Keeps the text itself clean and readable */
+  padding-top: 15px;
+}
