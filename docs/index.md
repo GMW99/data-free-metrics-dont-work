@@ -1,5 +1,5 @@
 ---
-description: The project page for the NeurIPS paper Data Free Metrics Don't Work
+description: The project page for the NeurIPS paper Data-Free Metrics Don't Work
 icon: lucide/triangle-alert
 hide:
   - navigation
@@ -8,7 +8,7 @@ hide:
 
 <div align="center" markdown>
 
-# Data Free Metrics Don't Work: </br> The Missing Invariance Under Functionally Preserving Reparameterisations
+# Data-Free Metrics Don't Work: </br> The Missing Invariance Under Functionally Preserving Reparameterisations
 
 [Gabryel Mason-Williams](https://gmw99.github.io/ "Personal Website")* [Israel Mason-Williams](https://ifmw01.github.io/ "Personal Website")* [Fredrik Dahlqvist](https://fdahlqvist.github.io/ "Personal Website")
 
@@ -35,7 +35,7 @@ hide:
 
 ## Introduction
 
-Data-free metrics have been offered as an effective mechanism for quantifying how well trained layers are within neural networks. One such metric, Alpha (α) is believe to have a special relationship with predicting quality of trained neural networks across scales. We test if data free metrics have the following properties.
+Data-free metrics have been offered as an effective mechanism for quantifying how well trained layers are within neural networks. One such metric, Alpha (α) is believe to have a special relationship with predicting quality of trained neural networks across scales. We test if data-free metrics have the following properties.
 
 1. Invariance under re-initialisation and re-randomisation, particularly for robust layers,
 2. Ability distinguish critical from robust layers,
@@ -47,11 +47,11 @@ Data-free metrics have been offered as an effective mechanism for quantifying ho
 
 ### Alpha Transitions in Neural Networks
 
-The figure below highlights how data free metrics analysis neural network layers, which is typically done via the singular values or eigenvalues. Furthermore, it shows what typically happens to the eigenvalues during training.
+The figure below highlights how data-free metrics analysis neural network layers, which is typically done via the singular values or eigenvalues. Furthermore, it shows what typically happens to the eigenvalues during training.
 
 <figure markdown >
 <img src="assets/joint_alpha.png" width="50%">
-    <figcaption>Data Free Analysis.</figcaption>
+    <figcaption>Data-Free Analysis.</figcaption>
 </figure>
 
 The change in the eigenvalues has lead to creation of a set of Power Norm Metrics:
@@ -68,8 +68,8 @@ The primary metric is $\alpha$, where values $2\leq\alpha\leq 6$ are considered 
 
 
 ### Robust and Critical Layers
-* Robust Layers: Layers of a trained neural network which cannot be re-initialised **XOR** re-randomised without destroying performance of the original network.
-* Critical Layers: Layers of a trained neural network which can be re-initialised **OR** re-randomised while preserving performance of the original network
+* Robust Layers: Layers of a trained neural network which when re-initialised **OR** re-randomised preserve performance of the original network.
+* Critical Layers: Layers of a trained neural network which when re-initialised **OR** re-randomised destroy performance of the original network.
 
 
 <figure markdown >
@@ -82,11 +82,11 @@ The primary metric is $\alpha$, where values $2\leq\alpha\leq 6$ are considered 
 
 ### Exact Reparametrisation Invariance and Data-Free Metrics
 
-We utilise the scale factor reparametrisation invariance, $(bW_1, b^{-1}W_2), b> 0$, see Figure below, to immediately prove that:
+We utilise scale factor reparametrisation invariance, $(bW_1, b^{-1}W_2), b> 0$, see Figure below, to immediately prove that:
 
-* Nuclear and log-nuclear norm: $\sum^{n}_{i=1}\sqrt{\lambda_i},\  \ln\left(\sum^{n}_{i=1}\sqrt{\lambda_i}\right)$
-* Frobenius and log-Frobenius norm: $\sum^{n}_{i=1}\lambda_i,\ \ln\left(\sum^{n}_{i=1}\lambda_i\right)$
-* Spectral and log-spectral norm: $\lambda_{\mathrm{max}},\  \ln( \lambda_{\mathrm{max}})$   
+* Nuclear and Log-Nuclear norm: $\sum^{n}_{i=1}\sqrt{\lambda_i},\  \ln\left(\sum^{n}_{i=1}\sqrt{\lambda_i}\right)$
+* Frobenius and Log-Frobenius norm: $\sum^{n}_{i=1}\lambda_i,\ \ln\left(\sum^{n}_{i=1}\lambda_i\right)$
+* Spectral and Log-Spectral norm: $\lambda_{\mathrm{max}},\  \ln( \lambda_{\mathrm{max}})$   
 
 are not causal to generalisation, as a layers value can be arbitrarily changed and the function of the model is preserved. 
 
@@ -141,14 +141,14 @@ The section shows that there is no correlation between a layers $\alpha$ metric 
 ### The Impact of Initialisation on Alpha
 
 We construct a family of initialisations that interpolate the max-normalised singular values $\Sigma_\lambda$ between  $\Sigma_{\lambda=1}$ and
-two natural endpoints: **$I$** (which corresponds to $\lambda=100001, \alpha\to \infty$), and the rank 1 spectrum (1,0,..,0) (which corresponds to $\lambda=0, \alpha\to 0$). 
+two natural endpoints: **$I$** (which corresponds to $\lambda=0, \alpha\to \infty$), and the rank 1 spectrum (1,0,..,0) (which corresponds to $\lambda=100001, \alpha\to 0$). 
 For each interpolation level $\lambda$ we initialise each layer of the model as $W_\lambda = U\Sigma_\lambda V^T$ for some randomly initialised orthogonal matrices $U, V$. 
 
 The Figure below shows the test accuracy at initialisation and corresponding model $\alpha$ value. The figure highlights that there is no correlation between $\alpha$ and generalisation, and that model with $\alpha$ values within the so called optimal range ($2\leq\alpha\leq6$) can achieve random accuracy.
 
 <figure markdown >
 <img src="assets/acc-alpha-at-init.png" width="75%">
-    <figcaption>Test Accuracy vs Model $\alpha$ at initialisation.</figcaption>
+    <figcaption>Test accuracy vs model $\alpha$ at initialisation.</figcaption>
 </figure>
 
 The Figure below highlights that through training the $\alpha$ value decreases from its initial value, towards the optimal value, if the initial $\alpha$ value is large enough ($\alpha<3$ did not improve in performance during training.).  
@@ -156,7 +156,7 @@ The Figure below highlights that through training the $\alpha$ value decreases f
 
 <figure markdown>
 <img src="assets/acc-alpha-through-training.png" width="75%">
-    <figcaption>Test Accuracy vs Model $\alpha$ through training.</figcaption>
+    <figcaption>Test accuracy vs model $\alpha$ through training.</figcaption>
 </figure>
 
 The Figure below highlights shows that there is a strong correlation between the initial model $\alpha$ and the resulting model $\alpha$ at the end of training. We therefore suggest that model $\alpha$ is as a consequence of our standard initialisation procedures and regularisation from SGD, not because this metric is indicative of generalisation.  
@@ -198,7 +198,7 @@ If you find paper useful for your work please cite:
 
 ```
 @inproceedings{mason-williams2026datafree,
-    title={{Data Free Metrics Don't Work: The Missing Invariance  Under Functionally Preserving Reparameterisations}},
+    title={{Data-Free Metrics Don't Work: The Missing Invariance  Under Functionally Preserving Reparameterisations}},
     author={Gabryel, Mason-Williams and Israel, Mason-Williams and Fredrik, Dahlqvist},
     booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
     year={2026},
