@@ -82,7 +82,7 @@ The primary metric is $\alpha$, where values $2\leq\alpha\leq 6$ are considered 
 
 ### Exact Reparametrisation Invariance and Data-Free Metrics
 
-We utilise the scale factor reparametrisation invariance, $(bW_1, b^{-1}W_2), b> 0$, see Figure below, to immediately prove that:
+We utilise scale factor reparametrisation invariance, $(bW_1, b^{-1}W_2), b> 0$, see Figure below, to immediately prove that:
 
 * Nuclear and Log-Nuclear norm: $\sum^{n}_{i=1}\sqrt{\lambda_i},\  \ln\left(\sum^{n}_{i=1}\sqrt{\lambda_i}\right)$
 * Frobenius and Log-Frobenius norm: $\sum^{n}_{i=1}\lambda_i,\ \ln\left(\sum^{n}_{i=1}\lambda_i\right)$
@@ -141,7 +141,7 @@ The section shows that there is no correlation between a layers $\alpha$ metric 
 ### The Impact of Initialisation on Alpha
 
 We construct a family of initialisations that interpolate the max-normalised singular values $\Sigma_\lambda$ between  $\Sigma_{\lambda=1}$ and
-two natural endpoints: **$I$** (which corresponds to $\lambda=100001, \alpha\to \infty$), and the rank 1 spectrum (1,0,..,0) (which corresponds to $\lambda=0, \alpha\to 0$). 
+two natural endpoints: **$I$** (which corresponds to $\lambda=0, \alpha\to \infty$), and the rank 1 spectrum (1,0,..,0) (which corresponds to $\lambda=100001, \alpha\to 0$). 
 For each interpolation level $\lambda$ we initialise each layer of the model as $W_\lambda = U\Sigma_\lambda V^T$ for some randomly initialised orthogonal matrices $U, V$. 
 
 The Figure below shows the test accuracy at initialisation and corresponding model $\alpha$ value. The figure highlights that there is no correlation between $\alpha$ and generalisation, and that model with $\alpha$ values within the so called optimal range ($2\leq\alpha\leq6$) can achieve random accuracy.
