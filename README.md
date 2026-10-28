@@ -1,4 +1,4 @@
-# Data Free Metrics Don't Work: The Missing Invariance Under Functionally Preserving Reparameterisations
+# Data-Free Metrics Don't Work: The Missing Invariance Under Functionally Preserving Reparameterisations
 
 
 [![Website](https://img.shields.io/badge/Website-blue?logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7IGNvbG9yLXNjaGVtZTogbGlnaHQgZGFyazsiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGRlZnMvPjxnPjxnIGRhdGEtY2VsbC1pZD0iMCI+PGcgZGF0YS1jZWxsLWlkPSIxIj48ZyBkYXRhLWNlbGwtaWQ9IlQ3MERiamJWQnJJNl9MOVFLZGdhLTIiPjxnPjxlbGxpcHNlIGN4PSIxNiIgY3k9IjE2IiByeD0iMTUiIHJ5PSIxNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDA4MGYwIiBzdHJva2Utd2lkdGg9IjIiIHBvaW50ZXItZXZlbnRzPSJhbGwiIHN0eWxlPSJzdHJva2U6IGxpZ2h0LWRhcmsocmdiKDAsIDEyOCwgMjQwKSwgcmdiKDUwLCAxNjAsIDI1NSkpOyIvPjxwYXRoIGQ9Ik0gMTYgMSBMIDE2IDMxIE0gMzEgMTYgTCAxIDE2IE0gMTYgMSBDIDIxLjAzIDQuMzMgMjQuMDUgOS45NyAyNC4wNSAxNiBDIDI0LjA1IDIyLjAzIDIxLjAzIDI3LjY3IDE2IDMxIEMgMTAuOTcgMjcuNjcgNy45NSAyMi4wMyA3Ljk1IDE2IEMgNy45NSA5Ljk3IDEwLjk3IDQuMzMgMTYgMSBaIE0gNS41IDI2LjUgQyAxMS43NyAyMS45OSAyMC4yMyAyMS45OSAyNi41IDI2LjUgTSA1LjUgNS41IEMgMTEuNzcgMTAuMDEgMjAuMjMgMTAuMDEgMjYuNSA1LjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwODBmMCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJhbGwiIHN0eWxlPSJzdHJva2U6IGxpZ2h0LWRhcmsocmdiKDAsIDEyOCwgMjQwKSwgcmdiKDUwLCAxNjAsIDI1NSkpOyIvPjwvZz48L2c+PC9nPjwvZz48L2c+PC9zdmc+&labelColor=555
@@ -8,7 +8,7 @@
 
 Please visit the [project webiste](https://gmw99.github.io/data-free-metrics-dont-work) for information about the paper.
 
-The notebooks provided demonstrate the method presented in "Data Free Metrics Don't Work: The Missing Invariance Under Functionally Preserving Reparameterisations" by G. Mason-Williams and I. Mason-Williams and F. Dahlqvist 2026, on an MLP and LLM Architectures.
+The notebooks provided demonstrate the method presented in "Data-Free Metrics Don't Work: The Missing Invariance Under Functionally Preserving Reparameterisations" by G. Mason-Williams and I. Mason-Williams and F. Dahlqvist 2026, on MLP and LLM Architectures.
 
 
 
@@ -18,7 +18,7 @@ If you find the paper or code useful for your work please cite:
 
 ```
 @inproceedings{mason-williams2026datafree,
-    title={{Data Free Metrics Don't Work: The Missing Invariance  Under Functionally Preserving Reparameterisations}},
+    title={{Data-Free Metrics Don't Work: The Missing Invariance  Under Functionally Preserving Reparameterisations}},
     author={Gabryel, Mason-Williams and Israel, Mason-Williams and Fredrik, Dahlqvist},
     booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
     year={2026},
